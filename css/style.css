@@ -1,0 +1,429 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    background: #E5E5E5;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    row-gap: 30px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: 33.3333%;
+    padding: 0 15px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+/* header */
+header {
+    position: absolute;
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+}
+
+.header__nav img:first-child {
+    width: 60px;
+    height: 60px;
+}
+
+.header__nav img:last-child {
+    width: 50px;
+    height: 50px;
+}
+
+/* header */
+
+/* main */
+#main {
+    background-image: url('./images/main.png');
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main__wrap {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: 0.02em;
+    padding-bottom: 35px;
+}
+
+.main__wrap p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/* main */
+
+/* history */
+#history {
+    margin-top: -150px;
+}
+
+.history__container {
+    background: #F7F7F7;
+    padding: 0 130px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.history__box {
+    text-align: center;
+}
+
+.history__box p:nth-child(1) {
+    font-size: 72px;
+    line-height: 107px;
+    text-transform: uppercase;
+    color: #F7654A;
+}
+
+
+/* history */
+
+/* arena */
+
+#arena {
+    padding: 100px 0 150px;
+}
+
+#arena h2 {
+    padding-bottom: 60px;
+    color: #404149;
+}
+
+.arena__box img {
+    width: 100%;
+    height: 280px;
+    display: block;
+}
+
+.arena__box p:nth-child(2) {
+    font-size: 24px;
+    line-height: 36px;
+    color: #404149;
+    margin: 66px 0 20px;
+    position: relative;
+}
+
+.arena__box p:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 6px;
+    background: #F7654A;
+    top: -15px;
+
+}
+
+
+.arena__box p:nth-child(3) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999999;
+}
+
+
+/* arena */
+
+/* apply */
+#apply {
+    padding: 45px 0;
+    background: #F7654A;
+}
+
+.apply__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.apply__wrap div p:nth-child(1) {
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.apply__wrap div p:nth-child(2) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.apply__wrap button {
+    display: flex;
+    padding: 14px 30px;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.apply__wrap button:hover {
+    opacity: 0.9;
+    transform: scale(0.99);
+}
+
+.apply__wrap button img {
+    margin-right: 15px;
+}
+
+/* apply */
+
+
+/* work */
+#work {
+    padding: 150px 0;
+}
+
+#work h2 {
+    padding-bottom: 66px;
+}
+
+
+.work__box {
+    background: #F7F7F7;
+    padding: 59px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.work__box p {
+    font-size: 21px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    width: 50%;
+}
+
+/* work */
+
+/* sky */
+#sky {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sky img {
+    display: block;
+    width: 25%;
+}
+
+/* sky */
+
+/* drop */
+
+#drop {
+    padding: 150px 0;
+}
+
+#drop h2 {
+    padding-bottom: 50px;
+}
+
+.drop__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.drop__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.drop__wrap img {
+    margin-right: 15px;
+    /* transform: rotate(90deg); */
+}
+
+.drop__wrap-image img {
+    transform: rotate(-90deg);
+}
+
+.drop__wrap p {
+    font-size: 24px;
+    color: #F7654A;
+}
+
+.drop__wrap-image {
+    display: flex;
+    align-items: center;
+}
+
+.drop__wrap-alt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+
+}
+
+.drop__wrap .drop__wrap-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999999;
+    width: 60%;
+}
+
+/* drop */
+
+/* partners */
+#partners {
+    padding: 100px 0;
+    background: #404149;
+
+}
+
+#partners h2 {
+    color: #FFFFFF;
+    margin-bottom: 60px;
+
+}
+
+.partners__wrap {
+    display: flex;
+    column-gap: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.partners__wrap img {
+    width: 170px;
+}
+
+/* partners */
+
+/* feedback */
+#feedback {
+    padding: 150px 0;
+}
+
+#feedback h2 {
+    margin-bottom: 64px;
+}
+
+.feedback__box-child {
+    background: #F7F7F7;
+    padding: 38px 30px;
+    margin-bottom: 30px;
+}
+
+.feedback__box p {
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+}
+
+.feedback__box p span {
+    color: red;
+}
+
+
+.feedback__box-child p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* feedback */
+
+/* contact */
+#contact {
+    padding: 100px 0 150px;
+}
+
+#contact h2 {
+    margin-bottom: 60px;
+}
+
+
+.contact__box {
+    text-align: center;
+}
+
+.contact__box h3 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #999999;
+}
+
+.contact__box p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.contact__box-img {
+    height: 75px;
+}
+
+
+/* contact */

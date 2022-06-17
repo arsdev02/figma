@@ -1,0 +1,134 @@
+/* прячем скролл */
+.hightScroll {
+    overflow: hidden;
+}
+/* прячем скролл */
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    top: -200%;
+
+    /* z-index: 1; */
+    /* display: none; */
+    /* opacity: 0; */
+}
+
+.backdropActiv {
+    top: 0;
+    /* display: block; */
+    /* opacity: 1; */
+}
+
+.modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -200%;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    transition: 1s;
+    /* top: -500px; */
+    /* z-index: 2; */
+    /* display: none; */
+    /* transform: scaleY(0); */
+    /* transform-origin: top; */
+}
+
+.modalActiv {
+    top: 0;
+    /* display: block; */
+    /* transform: scaleY(1); */
+}
+
+.modal p:first-child{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.modal__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7654A;
+    color: #fff;
+    /* position: relative; */
+}
+
+.modal_img_box {
+    padding: 10px;
+    /* background-color: red; */
+}
+.modal_img_box:hover{
+    background-color: red;
+}
+
+.modal_img_box:hover img {
+    transform: rotate(90deg);
+}
+
+.modal img {
+    width: 20px;
+    height: 20px;
+    transition: .5s;
+    /* position: absolute;
+    right: 10px;
+    top: 10px; */
+    /* margin-right: 10px; */
+}
+
+/* .modal img:hover{
+    transform: rotate(90deg);
+} */
+
+form {
+    height: 85%;
+    display: flex;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #F7654A;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: 20px;
+}
+fieldset input::placeholder {
+    color: #fff;
+}
+
+fieldset input {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+
+.form__buttons_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.form__buttons_box button {
+    /* display: block; */
+    background: #000;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
